@@ -54,7 +54,7 @@ const Index = () => {
               </a>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-accent/50 hover:bg-accent/10">
-              <a href="https://www.instagram.com/farhan2r25/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/farhanahmed2r25/" target="_blank" rel="noopener noreferrer">
                 <Instagram className="w-5 h-5 mr-2" />
                 Instagram
               </a>
