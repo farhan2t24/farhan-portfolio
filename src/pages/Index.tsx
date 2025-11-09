@@ -1,4 +1,5 @@
 import { StarField } from '@/components/StarField';
+import { PlanetField } from '@/components/PlanetField';
 import { ChatBox } from '@/components/ChatBox';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -17,6 +18,7 @@ const Index = () => {
   return (
     <div className="min-h-screen relative">
       <StarField />
+      <PlanetField />
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -32,7 +34,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/30 to-background z-0" />
         
         <div className="relative z-10 text-center px-4 space-y-8">
-          <h1 className="text-8xl md:text-9xl font-bold text-gradient animate-in fade-in slide-in-from-bottom-4 duration-1000 floating">
+          <h1 className="text-8xl md:text-9xl font-bold text-gradient hero-glow animate-in fade-in slide-in-from-bottom-4 duration-1000">
             FARHAN
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
@@ -52,7 +54,7 @@ const Index = () => {
               </a>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-accent/50 hover:bg-accent/10">
-              <a href="https://www.instagram.com/?hl=en" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/farhan2r25/" target="_blank" rel="noopener noreferrer">
                 <Instagram className="w-5 h-5 mr-2" />
                 Instagram
               </a>
@@ -125,7 +127,11 @@ const Index = () => {
                 badges: ['Academic Excellence', 'Leadership', 'All-round Development']
               }
             ].map((edu, index) => (
-              <Card key={index} className="glass-card p-8 hover:scale-[1.02] transition-all duration-300">
+              <Card 
+                key={index} 
+                className="glass-card p-8 hover:scale-[1.02] transition-all duration-300 cascade-item"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
                 <div className="flex items-start gap-6">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center flex-shrink-0 cosmic-glow">
                     <GraduationCap className="w-8 h-8 text-foreground" />

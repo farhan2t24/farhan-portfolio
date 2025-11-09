@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MessageCircle, X, Send } from 'lucide-react';
+import { X, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
@@ -25,7 +25,7 @@ export const ChatBox = () => {
         >
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent rounded-full blur-xl opacity-50 group-hover:opacity-100 transition-opacity" />
-            <MessageCircle className="w-8 h-8 text-foreground relative z-10" />
+            <span className="text-3xl relative z-10">👽</span>
           </div>
         </button>
       )}
